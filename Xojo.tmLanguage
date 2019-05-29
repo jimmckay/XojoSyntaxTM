@@ -6,6 +6,10 @@
 	<array>
 		<string>xojo_code</string>
 		<string>xojo_window</string>
+		<string>xojo_menu</string>
+		<string>xojo_report</string>
+		<string>xojo_script</string>
+		<string>xojo_toolbar</string>
 	</array>
 	<key>name</key>
 	<string>xojo</string>
