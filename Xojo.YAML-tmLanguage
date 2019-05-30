@@ -7,27 +7,18 @@ patterns:
 - {include: '#string-literal'}
 - {include: '#keywords'}
 - {include: '#keywords-numeric'}
-- {include: '#keywords-functions'}
-- {include: '#keywords-functions-end'}
 - {include: '#numbers'}
 - {include: '#numbers-literal'}
 - {include: '#numbers-binary'}
-- {include: '#parens'}
-- {include: '#operators'}
 repository:
   comment: {match: (//|').*$, name: punctuation.definition.comment.xojo}
   comment-rem: {match: '(?i)(rem .++)$', name: punctuation.definition.comment.xojo}
-  keywords: {match: '\b(?i)(dim|as|if|then|else|for|next|do|loop|until|while|wend|end
-      if|select case|case|end select|private|public|protected)\b', name: keyword.control.xojo}
-  keywords-functions: {match: '\b(?i)(sub|function|class)\s\w++\b', name: keyword.declaration.function.xojo}
-  keywords-functions-end: {match: '\b(?i)(end sub|end function|end class)\b', name: keyword.declaration.function.xojo}
-  keywords-numeric: {match: '\b(?i)(boolean|integer|double|cgfloat|long|string|color|picture|graphics|(u)*int(8|16|32|64))\b',
-    name: variable.language.xojo}
+  keywords: {match: '\b(?i)(dim|as|if|then|else|for|next|do|loop|until|while|wend|end|if|select|case|end|private|public|protected)\b', name: keyword.control.xojo}
+  keywords-functions: {match: '\b(?i)(sub|function|class|end)\s\w++\b', name: keyword.declaration.function.xojo}
+  keywords-numeric: {match: '\b(?i)(boolean|integer|double|cgfloat|long|string|color|true|false|(u)*int(8|16|32|64))\b', name: variable.language.xojo}
   numbers: {match: '\b(-)?[0-9.]+\b', name: constant.numeric.xojo}
   numbers-binary: {match: '(?i)&b[01]+', name: constant.numeric.integer}
   numbers-literal: {match: '(?i)(&h|&c)[0-9a-f]+', name: constant.numeric.integer}
-  operators: {match: (\+|-|/|\\|<|>|<=|>=|\*|=), name: keyword.operator.arithmetic.xojo}
-  parens: {comment: symbols, match: (\(|\)), name: punctuation.section.parens.xojo}
   string-literal: {comment: string literals, match: '(\".*?\")', name: string.quoted.double.xojo}
   tags: {match: ^\s*#.*$, name: markup.italic.xojo}
 scopeName: source.xojo
