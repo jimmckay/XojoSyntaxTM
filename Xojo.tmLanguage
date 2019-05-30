@@ -37,6 +37,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#directives</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#keywords-numeric</string>
 		</dict>
 		<dict>
@@ -75,7 +79,14 @@
 		<key>keywords</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(dim|as|if|then|else|for|next|do|loop|until|while|wend|end if|select case|case|end select|private|public|protected)\b</string>
+			<string>\b(?i)(dim|const|static|as|if|then|else|for|next|do|loop|until|while|wend|end if|select case|case|end select|private|public|protected|try|catch|finally)\b</string>
+			<key>name</key>
+			<string>keyword.xojo</string>
+		</dict>
+		<key>directives</key>
+		<dict>
+			<key>match</key>
+			<string>(?i)#(if|else|elseif|endif|pragma)\b</string>
 			<key>name</key>
 			<string>keyword.xojo</string>
 		</dict>
@@ -126,9 +137,9 @@
 		<key>tags</key>
 		<dict>
 			<key>match</key>
-			<string>^\s*#.*$</string>
+			<string>^\s*#tag.*$</string>
 			<key>name</key>
-			<string>markup.italic.xojo</string>
+			<string>markup.bold.xojo</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
