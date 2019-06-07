@@ -79,7 +79,7 @@
 		<key>keywords</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(me|self|super|return|dim|const|static|as|if|then|else|for|next|do|loop|until|while|wend|end if|select case|case|end select|private|public|protected|try|catch|finally|nil|and|or|mod|to|downto|new)\b</string>
+			<string>\b(?i)(me|self|super|return|dim|const|static|as|if|then|else|elseif|for|next|do|loop|until|while|wend|end if|select case|case|end select|private|public|protected|try|catch|finally|nil|and|or|not|mod|to|downto|new)\b</string>
 			<key>name</key>
 			<string>keyword.xojo</string>
 		</dict>
@@ -93,7 +93,7 @@
 		<key>keywords-functions</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(sub|function|class|end|return)\s\w++\b</string>
+			<string>\b(?i)(sub|function|class|end|return|get|set)\s\w++\b</string>
 			<key>name</key>
 			<string>keyword.xojo</string>
 		</dict>
