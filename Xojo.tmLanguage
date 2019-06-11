@@ -10,6 +10,12 @@
 		<string>xojo_report</string>
 		<string>xojo_script</string>
 		<string>xojo_toolbar</string>
+		<string>xojo_image</string>
+		<string>rbbas</string>
+		<string>rbfrm</string>
+		<string>rbmnu</string>
+		<string>rbres</string>
+		<string>rbtbar</string>
 	</array>
 	<key>name</key>
 	<string>xojo</string>
@@ -79,7 +85,7 @@
 		<key>keywords</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(me|self|super|return|dim|const|static|as|if|then|else|elseif|for|next|do|loop|until|while|wend|end if|select case|case|end select|private|public|protected|try|catch|finally|nil|and|or|not|mod|to|downto|new)\b</string>
+			<string>\b(?i)(me|self|super|return|dim|const|static|as|if|then|else|elseif|for|next|do|loop|until|while|wend|end if|select case|case|end select|private|public|protected|inherits|try|catch|finally|nil|and|or|not|mod|to|downto|new)\b</string>
 			<key>name</key>
 			<string>keyword.xojo</string>
 		</dict>
@@ -93,7 +99,7 @@
 		<key>keywords-functions</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(sub|function|class|end|return|get|set)\s\w++\b</string>
+			<string>\b(?i)(sub|function|class|end|return|get|set|begin)\s\w++\b</string>
 			<key>name</key>
 			<string>keyword.xojo</string>
 		</dict>
