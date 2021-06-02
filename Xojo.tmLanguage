@@ -85,7 +85,7 @@
 		<key>keywords</key>
 		<dict>
 			<key>match</key>
-			<string>\b(?i)(me|self|super|return|dim|const|static|as|if|then|else|elseif|for|next|do|loop|until|while|wend|end if|select case|case|end select|private|public|protected|inherits|try|catch|finally|nil|and|or|not|mod|to|downto|new|get|set|end)\b</string>
+			<string>\b(?i)(me|self|super|return|dim|var|const|static|as|if|then|else|elseif|for|next|do|loop|until|while|wend|end if|select case|case|end select|private|public|protected|inherits|try|catch|finally|nil|and|or|not|mod|to|downto|new|get|set|end)\b</string>
 			<key>name</key>
 			<string>keyword.xojo</string>
 		</dict>
